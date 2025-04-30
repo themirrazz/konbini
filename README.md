@@ -52,7 +52,7 @@ for(var i = 0; i < all.length; i++) {
 
 ### With Konbini
 ```js
-$parent['$please remove me']
+$parent['$please remove me'].remove();
 ```
 
 ## Previews
