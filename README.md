@@ -54,3 +54,13 @@ for(var i = 0; i < all.length; i++) {
 ```js
 $parent['$please remove me']
 ```
+
+## Previews
+### Shortcuts - Coming in v2.0.0!
+```js
+                                 document   =>   $dom
+          document.querySelector('query')   =>   $dom.qs('.query')
+document.getElementsByClassName('.class')   =>   $dom.class('.class')
+            document.getElementById('id')   =>   $dom.$id / $dom['$id']
+     document.getElementsByTagName('div')   =>   $dom.div
+```
