@@ -83,11 +83,7 @@
     ].forEach(tag => {
         Object.defineProperty(Document.prototype, tag, {
             get: function () {
-                var tags = document.getElementsByTagName(tag);
-                var z = tags[0];
-                if(!z) {
-                    return tags;
-                }
+                return document.getElementsByTagName(tag);
             }
         })
     });
