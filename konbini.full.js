@@ -65,4 +65,30 @@
     };
     // Automatically do all elements
     checkElement(document.documentElement, true);
+    Object.defineProperty(window, '$dom', {
+        get: function () {
+            return window.document
+        }
+    });
+    // tag shortcuts
+    [
+        'div', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+        'pre', 'textarea', 'input', 'select', 'object',
+        'iframe', 'frame', 'embed', 'object', 'source',
+        'picture', 'track', 'audio', 'video', 'canvas',
+        'img', 'svg', 'table', 'tr', 'th', 'td', 'ruby',
+        'rp', 'rt', 'b', 'i', 'u', 's', 'strike', 'font',
+        'strong', 'em', 'br', 'hr', 'blockquote', 'form',
+        'fieldset', 'legend', 'details', 'summary', 'code'
+    ].forEach(tag => {
+        Object.defineProperty(Document.prototype, tag, {
+            get: function () {
+                var tags = document.getElementsByTagName(tag);
+                var z = tags[0];
+                if(!z) {
+                    return tags;
+                }
+            }
+        })
+    });
 })();
