@@ -10,7 +10,7 @@
             'dom-shortcut-id',
             'dom-shortcut-tag'
         ].includes(feature),
-        syntax: 'jsrt/chrome'
+        syntax: 'es2020/chrome'
     };
     var appendChild = Element.prototype.appendChild;
     var replaceChild = Element.prototype.replaceChild;
