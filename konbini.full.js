@@ -1,6 +1,17 @@
 // Konbini
 // (c) themirrazz, 30 Apr 2025
-(function () {
+(() => {
+    navigator.konbini = {
+        v: '1.0.2',
+        supports: (feature) => [
+            'auto-refresh',
+            'smart-hooking',
+            'dom-shortcut',
+            'dom-shortcut-id',
+            'dom-shortcut-tag'
+        ].includes(feature),
+        compat: 'es2025/chrome'
+    };
     var appendChild = Element.prototype.appendChild;
     var replaceChild = Element.prototype.replaceChild;
     var innerHTML = Object.getOwnPropertyDescriptor(Element.prototype, 'innerHTML');
