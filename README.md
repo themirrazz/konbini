@@ -4,7 +4,7 @@ A library that makes calling up elements by ID easier than ever. And now, it's e
 ## Getting elements by ID
 ### Raw
 ```js
-var myElement = document.getElementById("myElement").innerText = "Hello!";
+document.getElementById("myElement").innerText = "Hello!";
 ```
 
 ### With Konbini
