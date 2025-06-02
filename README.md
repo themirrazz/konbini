@@ -17,7 +17,7 @@ $myElement.innerText = "Hello!";
 
 ### Raw
 ```js
-document.querySelector('#def #wxyz').child.remove();
+document.querySelector('#def #wxyz').remove();
 ```
 
 ### With Konbini
