@@ -85,9 +85,9 @@
     // tag shortcuts
     [
         'div', 'p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
-        'pre', 'textarea', 'input', 'select', 'object',
-        'iframe', 'frame', 'embed', 'object', 'source',
-        'picture', 'track', 'audio', 'video', 'canvas',
+        'pre', 'textarea', 'input', 'select',
+        'iframe', 'source',
+        'track', 'audio', 'video', 'canvas',
         'img', 'svg', 'table', 'tr', 'th', 'td', 'ruby',
         'rp', 'rt', 'b', 'i', 'u', 's', 'strike', 'font',
         'strong', 'em', 'br', 'hr', 'blockquote', 'form',
