@@ -1,5 +1,5 @@
 // Konbini
-// (c) themirrazz, 02 May 2025
+// (c) themirrazz, 09 June 2025
 (() => {
     navigator.konbini = {
         v: '1.0.2',
